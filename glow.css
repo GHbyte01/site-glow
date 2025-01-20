@@ -1,0 +1,142 @@
+body{
+    background-color:black;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: pink;
+    max-width: 100%;
+    height: auto;
+}
+
+.produto-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 8px;
+}
+.produto-arq{
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+.produto-arq:hover{
+    transform: scale(1.03);
+}
+.produto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.produto-info h2 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+.produto-info p {
+    margin: 5px 0;
+}
+.price {
+    font-weight: bold;
+    color: white;
+}
+.espaçamento{
+    margin-top: 40px;
+}
+.botao{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    background-color:rgb(255, 192, 203);
+    transition: background-color 0.3 ease, transform 0.2 ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0.1);
+}
+.botao:hover{
+    transform: scale(1.05);
+    border-color: white;
+}
+.botao-sobre{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    background-color : black;
+    transition: background-color 0.3 ease, transform 0.2 ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0.1);
+}
+.botao-sobre:hover{
+    transform: scale(1.05);
+    border-color: white;
+}
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0.1);
+    background-color: pink;
+}
+h1, h2 {
+    font-family: 'Playfair display', serif;
+    color: pink;
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.aks{
+    background-color: pink;
+    padding: 3px 3px;
+    border-left: 3px solid #0077cc;
+}
+.site-footer{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: pink;
+    border-top: 1px solid #e9ecef;
+}
+.site-footer .footer-content p{
+    margin: 5px;
+    line-height: 1.5;
+}
